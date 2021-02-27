@@ -1,0 +1,35 @@
+## Docs for maze-gen solving API
+
+### Exports
+
+One file, export async function.  
+Params:
+```
+maze -> 2D array of SqaureRender instances,
+hookFn -> async function
+```
+
+### Constraints
+
+Everytime a change is made on the maze array (i.e. continue path):
+```js
+await hookFn(maze);
+```
+
+### SquareRender API
+
+```js
+Properties:
+- open : { up, right, down, left } <booleans> // Which sides of this square have walls, 4 booleans
+- visited : <boolen> // If this sqaure has been visited
+
+Methods:
+- visit (sidesArr <number array (range 0 - 3) (ideal count 2)>) // When a player enters a Square. Normal use: visit( [entrySide, exitSide] )
+
+Meta:
+- Sides layout:
+    Top : 0,
+    Right : 1,
+    Down : 2,
+    Left : 3
+```
