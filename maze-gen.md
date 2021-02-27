@@ -4,7 +4,7 @@
 
 Async function, params:
 ```
-maze -> 2D array of SqaureRender instances,
+maze -> 2D array of SquareRender instances,
 hookFn -> async function
 ```
 
