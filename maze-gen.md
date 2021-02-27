@@ -7,6 +7,10 @@ Async function, params:
 maze -> 2D array of SquareRender instances,
 hookFn -> async function
 ```
+Return value:
+```
+maze (same as param)
+```
 
 ### Constraints
 
