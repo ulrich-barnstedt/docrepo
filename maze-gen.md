@@ -2,8 +2,7 @@
 
 ### Exports
 
-One file, export async function.  
-Params:
+Async function, params:
 ```
 maze -> 2D array of SqaureRender instances,
 hookFn -> async function
