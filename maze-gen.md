@@ -27,8 +27,10 @@ Properties:
 - visited : <boolen> // If this sqaure has been visited
 
 Methods:
-- visit (sidesArr <number array (range 0 - 3) (ideal count 2)>) // When a player enters a Square. Normal use: visit( [entrySide, exitSide] )
-
+- visit (sidesArr <number array (range 0 - 3) (ideal count 2)>) // When a player enters a Square. Normal use: visit( [entrySide, exitSide] ). Returns the instance.
+- unvisit () // Reverse all visits through .visit(...). Returns the instance.
+- markGoal () // Mark this sqaure as a goal.
+        
 Meta:
 - Sides layout:
     Top : 0,
